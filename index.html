@@ -1,0 +1,44 @@
+Các tài liệu của nhóm sẽ được cập nhật tại đây.
+        </p>
+
+        <button class="btn" onclick="alert('Chức năng tải tài liệu sẽ được thêm sau!')">
+            + Thêm tài liệu
+        </button>
+    </div>
+
+</section>
+
+<footer>
+    © 2026 NHÓM 7 - CNCN | Hệ thống quản lý và chia sẻ học tập
+</footer>
+
+</main>
+
+</div>
+
+
+<script>
+
+function showPage(page) {
+
+    let sections = document.querySelectorAll(".section");
+
+    sections.forEach(function(section) {
+        section.classList.remove("active");
+    });
+
+    document.getElementById(page).classList.add("active");
+
+    let buttons = document.querySelectorAll(".sidebar button");
+
+    buttons.forEach(function(button) {
+        button.classList.remove("active");
+    });
+
+    window.scrollTo(0,0);
+}
+
+</script>
+
+</body>
+</html>
